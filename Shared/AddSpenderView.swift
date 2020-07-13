@@ -9,6 +9,7 @@ import SwiftUI
 
 struct AddSpenderView: View {
     
+    @EnvironmentObject var viewModel: SpendingVM
     @Environment(\.presentationMode) var presentationMode
     
     @State private var date: Date = Date()
@@ -30,6 +31,7 @@ struct AddSpenderView: View {
                 CategoryPicker(categories: categories, category: $category)
                 ItemDatePicker(date: $date)
                 SaveButton(timeSpan: $timeSpan, name: name, amount: amount, category: category, date: date, selectedType: selectedType)
+                    .environmentObject(viewModel)
                 //Spacer()
             }
             .padding()
@@ -175,6 +177,7 @@ struct ItemDatePicker: View {
 
 struct SaveButton: View {
     
+    @EnvironmentObject var viewModel: SpendingVM
     @Environment(\.presentationMode) var presentationMode
     
     @Binding var timeSpan: [Item]
@@ -191,6 +194,7 @@ struct SaveButton: View {
             let item = Item(name: name, amount: Double(amount) ?? 10, category: category, description: "Schimbat distributia", date: date, type: selectedType)
             timeSpan.append(item)
             presentationMode.wrappedValue.dismiss()
+            viewModel.calculateSpendings(timeSpan: timeSpan)
         }
         .frame(width: UIScreen.main.bounds.width / 2, height: 50, alignment: .center)
         .background(AdaptColors.theOrange)

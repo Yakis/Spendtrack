@@ -25,6 +25,8 @@
 		1550C8F624BA18C400C9DBE3 /* AddSpenderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1550C8F424BA18C400C9DBE3 /* AddSpenderView.swift */; };
 		1550C8F824BA25F300C9DBE3 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1550C8F724BA25F300C9DBE3 /* Constants.swift */; };
 		1550C8F924BA25F300C9DBE3 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1550C8F724BA25F300C9DBE3 /* Constants.swift */; };
+		1584518924BCD5F900CC2DCF /* SpendingVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1584518824BCD5F900CC2DCF /* SpendingVM.swift */; };
+		1584518A24BCD5F900CC2DCF /* SpendingVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1584518824BCD5F900CC2DCF /* SpendingVM.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +45,7 @@
 		152CC4D024B8F1030042A727 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		1550C8F424BA18C400C9DBE3 /* AddSpenderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddSpenderView.swift; sourceTree = "<group>"; };
 		1550C8F724BA25F300C9DBE3 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		1584518824BCD5F900CC2DCF /* SpendingVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpendingVM.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +89,7 @@
 				152CC4D024B8F1030042A727 /* SettingsView.swift */,
 				1550C8F424BA18C400C9DBE3 /* AddSpenderView.swift */,
 				1550C8F724BA25F300C9DBE3 /* Constants.swift */,
+				1584518824BCD5F900CC2DCF /* SpendingVM.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -219,6 +223,7 @@
 				152CC4CB24B8F0DB0042A727 /* RemindersView.swift in Sources */,
 				152CC4D124B8F1030042A727 /* SettingsView.swift in Sources */,
 				152CC4CE24B8F0EF0042A727 /* SharingView.swift in Sources */,
+				1584518924BCD5F900CC2DCF /* SpendingVM.swift in Sources */,
 				152CC4C824B8F0C60042A727 /* SpendingsView.swift in Sources */,
 				1550C8F824BA25F300C9DBE3 /* Constants.swift in Sources */,
 			);
@@ -234,6 +239,7 @@
 				152CC4CC24B8F0DB0042A727 /* RemindersView.swift in Sources */,
 				152CC4D224B8F1030042A727 /* SettingsView.swift in Sources */,
 				152CC4CF24B8F0EF0042A727 /* SharingView.swift in Sources */,
+				1584518A24BCD5F900CC2DCF /* SpendingVM.swift in Sources */,
 				152CC4C924B8F0C60042A727 /* SpendingsView.swift in Sources */,
 				1550C8F924BA25F300C9DBE3 /* Constants.swift in Sources */,
 			);

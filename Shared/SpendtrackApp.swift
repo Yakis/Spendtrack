@@ -9,9 +9,15 @@ import SwiftUI
 
 @main
 struct SpendtrackApp: App {
+    
+    
+    @StateObject var spendingVM = SpendingVM()
+    
+    
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(spendingVM)
         }
     }
 }
